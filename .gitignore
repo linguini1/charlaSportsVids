@@ -1,3 +1,7 @@
+# Virtual environment
+./env
+
+# Any output of the program
 ./output
 *.mp3
 *.mp4
