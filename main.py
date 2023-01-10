@@ -1,10 +1,7 @@
-# Downloads sports videos off of OUA TV
+# Program that downloads sports videos off of OUA TV
 __author__ = "Matteo Golin"
 
 # Imports
-from conversion import TSVideo
-from web import get_m3u8_link, parse_video_name
-import moviepy.editor as mp
 from gui import GUI
 
 # Constants

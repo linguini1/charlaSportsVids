@@ -51,7 +51,7 @@ class GUI:
         """Checks for queue updates."""
 
         try:
-            result = self.queue.get()
+            result = self.queue.get(timeout=0.1)
             print(result)
         except q.Empty:
             pass
@@ -62,8 +62,11 @@ class GUI:
 
         """Runs the GUI main loop."""
 
-        # Begin listening
-        self.__queue_listener()
-
+        # Open the login page
         self.login_page.pack(fill="both", expand=True)
+
+        # Begin listening
+        self.root.after(UPDATE_TIME, self.__queue_listener())
+
+        # Run
         self.root.mainloop()
