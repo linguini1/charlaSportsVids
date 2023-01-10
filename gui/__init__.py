@@ -23,7 +23,7 @@ UPDATE_TIME = 100
 # GUI class
 class GUI:
 
-    """Runs the Tkinter GUI."""
+    """Contains the GUI for downloading sports videos from OUATV."""
 
     def __init__(self, credentials: dict[str, str], output_dir: str):
 
